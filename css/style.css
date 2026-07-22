@@ -561,6 +561,12 @@ nav.main-nav a.active {
   margin: 0 0 16px;
 }
 
+.answer-gif {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+}
+
 /* Videos */
 .videos-intro {
   text-align: center;
