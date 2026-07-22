@@ -181,12 +181,23 @@ nav.main-nav a.active {
 }
 
 .logo-lockup .wordmark {
-  max-width: 500px;
-  width: 70%;
+  width: 420px;
+  max-width: 100%;
 }
 
 .logo-lockup .hamster {
   width: 50px;
+}
+
+@media (min-width: 901px) {
+  .logo-lockup .wordmark {
+    width: 720px;
+    max-width: none;
+  }
+
+  .logo-lockup .hamster {
+    width: 60px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -386,8 +397,8 @@ nav.main-nav a.active {
 @media (min-width: 901px) {
   .astro-photo-center {
     flex: 0 0 auto;
-    width: 260px;
-    height: 260px;
+    width: 210px;
+    height: 210px;
     margin: 0;
   }
 }
