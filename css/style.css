@@ -88,7 +88,7 @@ nav.main-nav a.active {
   cursor: pointer;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   header.site-header {
     padding: 16px 20px;
     gap: 10px;
