@@ -388,7 +388,7 @@ nav.main-nav a.active {
 /* content box used on About */
 .content-box {
   border: 1px solid #555;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   max-width: 900px;
   margin: 20px auto 60px;
   padding: 40px;
@@ -403,7 +403,7 @@ nav.main-nav a.active {
   max-width: 900px;
   margin: 0 auto 60px;
   padding: 40px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   border-top: 1px solid #555;
 }
 
@@ -498,7 +498,13 @@ nav.main-nav a.active {
   margin: 40px auto 60px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
+}
+
+.video-item {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid #555;
+  padding: 24px;
 }
 
 .video-list h2 {
