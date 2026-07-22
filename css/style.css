@@ -716,3 +716,33 @@ footer.site-footer {
     max-width: 380px;
   }
 }
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.photo-grid figure {
+  margin: 0;
+  border: 1px solid #444;
+}
+
+.photo-grid img {
+  display: block;
+  width: 100%;
+}
+
+.photo-grid figcaption {
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #ccc;
+  background: #111;
+}
+
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
