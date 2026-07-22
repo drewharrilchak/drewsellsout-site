@@ -325,7 +325,7 @@ nav.main-nav a.active {
 
 .client-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   max-width: 900px;
   margin: 0 auto 50px;
@@ -358,6 +358,7 @@ nav.main-nav a.active {
 .client-card.nike { background-color: #111; }
 .client-card.mlb { background-color: #002d72; }
 .client-card.visa { background-color: #1a1f71; }
+.client-card.allstate { background-color: #0033a0; }
 
 .section-divider {
   max-width: 900px;
