@@ -204,8 +204,6 @@ nav.main-nav a.active {
 
   .hero-top .logo-lockup {
     margin: 0;
-    flex: 1 1 auto;
-    justify-content: flex-end;
   }
 }
 
