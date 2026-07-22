@@ -137,12 +137,8 @@ nav.main-nav a.active {
 .hero {
   text-align: center;
   padding: 60px 20px 20px;
-}
-
-@media (min-width: 901px) {
-  .hero {
-    padding-right: 420px;
-  }
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .marquee-wrap {
@@ -169,6 +165,13 @@ nav.main-nav a.active {
   to { transform: translateX(-50%); }
 }
 
+.hero-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo-lockup {
   display: flex;
   align-items: center;
@@ -189,6 +192,20 @@ nav.main-nav a.active {
 @media (max-width: 600px) {
   .logo-lockup .hamster {
     display: none;
+  }
+}
+
+@media (min-width: 901px) {
+  .hero-top {
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+
+  .hero-top .logo-lockup {
+    margin: 0;
+    flex: 1 1 auto;
+    justify-content: flex-end;
   }
 }
 
@@ -370,10 +387,10 @@ nav.main-nav a.active {
 
 @media (min-width: 901px) {
   .astro-photo-center {
-    float: right;
-    width: 340px;
-    height: 340px;
-    margin: -140px 60px 20px 40px;
+    flex: 0 0 auto;
+    width: 260px;
+    height: 260px;
+    margin: 0;
   }
 }
 
