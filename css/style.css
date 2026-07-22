@@ -355,10 +355,10 @@ nav.main-nav a.active {
   border-bottom-color: var(--bevel-light);
 }
 
-.client-card.nike { background-color: #111; }
-.client-card.mlb { background-color: #002d72; }
-.client-card.visa { background-color: #1a1f71; }
-.client-card.allstate { background-color: #0033a0; }
+.client-card.nike { background-image: url('../images/rainbow.gif'); background-size: cover; }
+.client-card.mlb { background-color: var(--blue); }
+.client-card.visa { background-color: var(--green); }
+.client-card.allstate { background-color: var(--orange); }
 
 .section-divider {
   max-width: 900px;
