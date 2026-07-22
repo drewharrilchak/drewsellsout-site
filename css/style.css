@@ -4,6 +4,7 @@
   --bg: #1c1d1b;
   --yellow: #ffff00;
   --blue: #2744ff;
+  --link: #6fc3ff;
   --green: #39a316;
   --orange: #eb7825;
   --faq-bg: #b8fffc;
@@ -32,7 +33,7 @@ body {
 }
 
 a {
-  color: var(--blue);
+  color: var(--link);
 }
 
 img {
@@ -512,7 +513,7 @@ nav.main-nav a.active {
   margin: 0 0 10px;
 }
 
-.sponsor-entry h3 a { color: var(--blue); }
+.sponsor-entry h3 a { color: var(--link); }
 
 .sponsor-entry p {
   margin: 4px 0;
