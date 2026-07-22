@@ -91,13 +91,51 @@ nav.main-nav a.active {
   padding: 60px 20px 20px;
 }
 
-.hero .prompt {
-  display: flex;
-  justify-content: space-between;
-  max-width: 900px;
-  margin: 0 auto 20px;
+.marquee-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.marquee-track {
+  display: inline-flex;
+  width: max-content;
+  animation: marquee-scroll 22s linear infinite;
+}
+
+.marquee-text {
   font-size: 16px;
   color: #ddd;
+  white-space: nowrap;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.logo-lockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+
+.logo-lockup .wordmark {
+  max-width: 500px;
+  width: 70%;
+}
+
+.logo-lockup .hamster {
+  width: 50px;
+}
+
+@media (max-width: 600px) {
+  .logo-lockup .hamster {
+    display: none;
+  }
 }
 
 .welcome-badge {
