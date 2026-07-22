@@ -344,6 +344,15 @@ nav.main-nav a.active {
   margin: 10px auto 30px;
 }
 
+@media (min-width: 901px) {
+  .astro-photo-center {
+    float: right;
+    width: 340px;
+    height: 340px;
+    margin: -140px 60px 20px 40px;
+  }
+}
+
 /* Page headings (svg/png hero art) */
 .page-heading {
   display: flex;
@@ -404,10 +413,15 @@ nav.main-nav a.active {
 .client-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 0;
   max-width: 900px;
   margin: 0 auto 50px;
-  padding: 0 20px;
+  border-width: 6px;
+  border-style: solid;
+  border-top-color: var(--bevel-dark);
+  border-left-color: var(--bevel-dark);
+  border-right-color: var(--bevel-light);
+  border-bottom-color: var(--bevel-light);
 }
 
 @media (max-width: 700px) {
@@ -430,12 +444,22 @@ nav.main-nav a.active {
   font-weight: 700;
   color: #111;
   text-decoration: underline;
-  border-width: 6px;
-  border-style: solid;
-  border-top-color: var(--bevel-dark);
-  border-left-color: var(--bevel-dark);
-  border-right-color: var(--bevel-light);
-  border-bottom-color: var(--bevel-light);
+  border-right: 1px solid #999;
+}
+
+.client-card:last-child {
+  border-right: none;
+}
+
+@media (max-width: 700px) {
+  .client-card {
+    border-right: none;
+    border-bottom: 1px solid #999;
+  }
+
+  .client-card:last-child {
+    border-bottom: none;
+  }
 }
 
 .client-card img {
