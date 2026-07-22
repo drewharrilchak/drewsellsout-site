@@ -357,13 +357,18 @@ nav.main-nav a.active {
 }
 
 .client-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
   text-align: center;
-  padding: 40px 20px;
+  padding: 30px 20px;
+  background-color: var(--white);
   font-family: 'Overpass Mono', monospace;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
-  color: var(--white);
+  color: #111;
   text-decoration: underline;
   border-width: 6px;
   border-style: solid;
@@ -373,10 +378,22 @@ nav.main-nav a.active {
   border-bottom-color: var(--bevel-light);
 }
 
-.client-card.nike { background-image: url('../images/rainbow.gif'); background-size: cover; }
-.client-card.mlb { background-color: var(--blue); }
-.client-card.visa { background-color: var(--green); }
-.client-card.allstate { background-color: var(--orange); }
+.client-card img {
+  max-height: 46px;
+  max-width: 100%;
+  width: auto;
+}
+
+.client-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.client-logos img {
+  max-height: 40px;
+}
 
 .section-divider {
   max-width: 900px;
