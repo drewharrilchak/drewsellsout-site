@@ -260,11 +260,23 @@ nav.main-nav a.active {
 .btn-green { background-color: var(--green); }
 .btn-orange { background-color: var(--orange); }
 .btn-white { background-color: var(--white); color: #000; }
+.btn-grey { background-color: #555; }
 
 .btn-wide {
   display: block;
   max-width: 560px;
-  margin: 0 auto 40px;
+  margin: 20px auto 0;
+}
+
+/* Soft pulsing shine around the box, used to draw the eye without
+   making an inner element (like a button) flashy */
+.glow-box {
+  animation: glow-pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 10px 2px rgba(255, 225, 76, 0.35); }
+  50% { box-shadow: 0 0 26px 8px rgba(255, 225, 76, 0.75); }
 }
 
 /* dancing gif row */
@@ -809,4 +821,28 @@ footer.site-footer {
   .photo-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.sponsor-me-callout {
+  font-family: 'Arvo', serif;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--yellow);
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.sponsor-me-cta {
+  text-align: center;
+}
+
+.sponsor-me-cta .btn-wide {
+  margin-top: 20px;
+}
+
+.sponsor-me-fineprint {
+  color: #aaa;
+  font-size: 14px;
+  margin: 16px 0 0;
 }
