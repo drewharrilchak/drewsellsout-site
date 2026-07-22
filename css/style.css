@@ -257,6 +257,77 @@ nav.main-nav a.active {
   width: 90%;
 }
 
+.page-heading-text {
+  text-align: center;
+  padding: 50px 20px 20px;
+  font-family: 'Overpass Mono', monospace;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 72px;
+  margin: 0;
+  background: linear-gradient(180deg, #ffe14c 0%, #eb7825 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 600px) {
+  .page-heading-text {
+    font-size: 40px;
+  }
+}
+
+/* Ad Book featured clients */
+.clients-intro {
+  text-align: center;
+  color: #ddd;
+  padding: 0 20px 30px;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+}
+
+@media (max-width: 700px) {
+  .client-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.client-card {
+  display: block;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: underline;
+  border-width: 6px;
+  border-style: solid;
+  border-top-color: var(--bevel-dark);
+  border-left-color: var(--bevel-dark);
+  border-right-color: var(--bevel-light);
+  border-bottom-color: var(--bevel-light);
+}
+
+.client-card.nike { background-color: #111; }
+.client-card.mlb { background-color: #002d72; }
+.client-card.visa { background-color: #1a1f71; }
+
+.section-divider {
+  max-width: 900px;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #444;
+}
+
 /* content box used on About */
 .content-box {
   border: 1px solid #555;
