@@ -76,6 +76,22 @@ nav.main-nav a.active {
   color: var(--yellow);
 }
 
+@media (max-width: 700px) {
+  header.site-header {
+    padding: 16px 20px;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  nav.main-nav {
+    gap: 8px 14px;
+    font-size: 14px;
+  }
+}
+
 /* Stars strip under header */
 .stars-strip {
   height: 100px;
