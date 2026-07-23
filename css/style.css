@@ -218,7 +218,8 @@ nav.main-nav a.active {
   }
 
   .hero-body {
-    padding-right: clamp(200px, 25vw, 280px);
+    max-width: clamp(460px, 64vw - 120px, 1400px);
+    margin: 0 auto;
   }
 }
 
