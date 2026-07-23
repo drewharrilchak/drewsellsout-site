@@ -191,7 +191,7 @@ nav.main-nav a.active {
 
 @media (min-width: 901px) {
   .logo-lockup .wordmark {
-    width: 720px;
+    width: clamp(420px, 45vw, 720px);
     max-width: none;
   }
 
@@ -210,11 +210,15 @@ nav.main-nav a.active {
   .hero-top {
     display: block;
     position: relative;
-    min-height: 230px;
+    min-height: 155px;
   }
 
   .hero-top .logo-lockup {
     margin: 0;
+  }
+
+  .hero-body {
+    padding-right: clamp(200px, 25vw, 280px);
   }
 }
 
@@ -397,10 +401,11 @@ nav.main-nav a.active {
 @media (min-width: 901px) {
   .astro-photo-center {
     position: absolute;
-    top: 65px;
+    top: clamp(90px, 12vw, 150px);
     right: 40px;
-    width: 210px;
-    height: 210px;
+    width: clamp(150px, 18vw, 230px);
+    height: clamp(195px, 23.5vw, 300px);
+    border-radius: 999px;
     margin: 0;
   }
 }
