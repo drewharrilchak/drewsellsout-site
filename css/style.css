@@ -210,7 +210,7 @@ nav.main-nav a.active {
   .hero-top {
     display: block;
     position: relative;
-    min-height: 270px;
+    min-height: 230px;
   }
 
   .hero-top .logo-lockup {
@@ -228,7 +228,7 @@ nav.main-nav a.active {
   font-style: italic;
   font-weight: 700;
   font-size: 32px;
-  margin: 40px 0 20px;
+  margin: 10px 0 20px;
 }
 
 .text-yellow {
@@ -397,7 +397,7 @@ nav.main-nav a.active {
 @media (min-width: 901px) {
   .astro-photo-center {
     position: absolute;
-    top: 70px;
+    top: 65px;
     right: 40px;
     width: 210px;
     height: 210px;
