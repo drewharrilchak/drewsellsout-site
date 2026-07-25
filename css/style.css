@@ -445,11 +445,9 @@ nav.main-nav a.active {
     right: calc(50% + 320px);
     top: 50%;
     transform: translateY(-50%);
-    width: auto;
-    height: 60px;
+    width: min(24vw, 678px);
+    height: auto;
     max-width: none;
-    object-fit: contain;
-    object-position: center;
   }
 }
 
