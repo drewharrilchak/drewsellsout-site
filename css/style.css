@@ -380,13 +380,22 @@ nav.main-nav a.active {
 }
 
 .astro-photo {
+  display: block;
   border-radius: 50%;
   overflow: hidden;
-  width: 260px;
-  height: 260px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
-  float: right;
-  margin: -180px 40px 20px 0;
+  margin: 20px auto 30px;
+}
+
+@media (min-width: 1300px) {
+  .astro-photo {
+    width: 260px;
+    height: 260px;
+    float: right;
+    margin: -180px 40px 20px 0;
+  }
 }
 
 .astro-photo-center {
