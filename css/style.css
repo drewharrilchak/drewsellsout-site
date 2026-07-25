@@ -389,7 +389,7 @@ nav.main-nav a.active {
   margin: 20px auto 30px;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1700px) {
   .astro-photo {
     width: 260px;
     height: 260px;
@@ -422,10 +422,11 @@ nav.main-nav a.active {
 
 /* Page headings (svg/png hero art) */
 .page-heading {
-  position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   padding: 40px 20px 20px;
 }
 
@@ -435,20 +436,11 @@ nav.main-nav a.active {
 }
 
 .page-heading img.page-heading-mascot {
-  display: none;
-}
-
-@media (min-width: 1250px) {
-  .page-heading img.page-heading-mascot {
-    display: block;
-    position: absolute;
-    right: calc(50% + 320px);
-    top: 50%;
-    transform: translateY(-50%);
-    width: min(24vw, 678px);
-    height: auto;
-    max-width: none;
-  }
+  width: auto;
+  height: clamp(30px, 6vw, 60px);
+  max-width: none;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .page-heading-text {
