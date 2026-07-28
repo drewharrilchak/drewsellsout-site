@@ -461,6 +461,24 @@ nav.main-nav a.active {
   }
 }
 
+/* Retro rainbow "WordArt" style, used for the Ad Book pages */
+.wordart-heading {
+  display: table;
+  margin: 0 auto;
+  font-size: 100px;
+  background: linear-gradient(90deg, #ff3b3b 0%, #ff9d3b 20%, #ffee3b 40%, #3bde5a 60%, #3b9dff 80%, #b03bff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 600px) {
+  .wordart-heading {
+    font-size: 56px;
+  }
+}
+
 /* Ad Book featured clients */
 .clients-intro {
   text-align: center;
@@ -670,6 +688,7 @@ nav.main-nav a.active {
   background-color: var(--bg);
   border: 1px solid #555;
   padding: 24px;
+  text-align: center;
 }
 
 .video-list h2 {
@@ -788,6 +807,7 @@ footer.site-footer {
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: start;
   gap: 16px;
   margin: 20px 0;
 }
