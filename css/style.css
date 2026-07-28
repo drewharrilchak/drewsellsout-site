@@ -296,7 +296,7 @@ nav.main-nav a.active {
 .btn-wide {
   display: block;
   max-width: 560px;
-  margin: 20px auto 0;
+  margin: 20px auto;
 }
 
 /* Soft pulsing shine around the box, used to draw the eye without
@@ -676,6 +676,15 @@ nav.main-nav a.active {
   margin: 0 0 6px;
 }
 
+.video-title-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.video-title-link:hover {
+  text-decoration: underline;
+}
+
 .video-list p {
   color: #ccc;
   margin: 0 0 16px;
@@ -687,6 +696,7 @@ nav.main-nav a.active {
   height: 0;
   overflow: hidden;
   border: 1px solid #444;
+  margin: 24px 0;
 }
 
 .video-embed iframe,
@@ -695,7 +705,7 @@ nav.main-nav a.active {
   top: 0; left: 0;
   width: 100%; height: 100%;
   border: 0;
-  background: #000;
+  background: var(--bg);
   object-fit: contain;
 }
 
