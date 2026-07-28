@@ -470,7 +470,7 @@ nav.main-nav a.active {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.6);
+  text-shadow: none;
 }
 
 @media (max-width: 600px) {
