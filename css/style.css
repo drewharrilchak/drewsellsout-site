@@ -479,6 +479,10 @@ nav.main-nav a.active {
   }
 }
 
+.wordart-heading-grey {
+  background: linear-gradient(180deg, #ffffff 0%, #b8b8b8 45%, #6e6e6e 100%);
+}
+
 /* Ad Book featured clients */
 .clients-intro {
   text-align: center;
