@@ -835,6 +835,27 @@ footer.site-footer {
   border-top: 1px solid #444;
 }
 
+.single-photo {
+  margin: 20px auto 0;
+  max-width: 340px;
+  border: 1px solid #444;
+}
+
+.single-photo img {
+  display: block;
+  width: 100%;
+}
+
+.single-photo figcaption {
+  padding: 14px 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ddd;
+  background: #111;
+  border-top: 1px solid #444;
+  text-align: center;
+}
+
 .section-title {
   font-family: 'Overpass Mono', monospace;
   color: var(--yellow);
