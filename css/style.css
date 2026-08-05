@@ -342,11 +342,20 @@ nav.main-nav a.active {
 /* signup */
 .signup {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 16px;
   margin: 30px auto 60px;
+}
+
+.signup form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .signup img {
