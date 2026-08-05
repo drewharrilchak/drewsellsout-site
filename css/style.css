@@ -334,6 +334,16 @@ nav.main-nav a.active {
   margin: -180px 40px 20px 0;
 }
 
+@media (max-width: 600px) {
+  .astro-photo {
+    float: none;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+  }
+}
+
 .astro-photo-center {
   display: block;
   border-radius: 50%;
