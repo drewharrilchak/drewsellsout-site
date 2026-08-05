@@ -376,6 +376,8 @@ nav.main-nav a.active {
   flex-shrink: 0;
   object-fit: cover;
   object-position: left center;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 600px) {
