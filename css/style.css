@@ -391,19 +391,19 @@ nav.main-nav a.active {
 .astro-photo {
   border-radius: 50%;
   overflow: hidden;
-  width: 260px;
-  height: 260px;
+  width: clamp(110px, 20vw, 260px);
+  height: clamp(110px, 20vw, 260px);
   object-fit: cover;
   float: right;
-  margin: -180px 40px 20px 0;
+  margin: clamp(-160px, -12vw, -30px) 40px 20px 0;
 }
 
 .astro-photo-center {
   display: block;
   border-radius: 50%;
   overflow: hidden;
-  width: 240px;
-  height: 240px;
+  width: clamp(140px, 40vw, 240px);
+  height: clamp(140px, 40vw, 240px);
   object-fit: cover;
   margin: 10px auto 30px;
 }
