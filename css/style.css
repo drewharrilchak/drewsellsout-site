@@ -359,7 +359,7 @@ nav.main-nav a.active {
 }
 
 .signup img {
-  width: 300px;
+  width: 225px;
 }
 
 .signup input[type="email"] {
@@ -386,16 +386,6 @@ nav.main-nav a.active {
   border-bottom-color: var(--bevel-light);
   text-decoration: underline;
   cursor: pointer;
-}
-
-.astro-photo {
-  border-radius: 50%;
-  overflow: hidden;
-  width: clamp(110px, 20vw, 260px);
-  height: clamp(110px, 20vw, 260px);
-  object-fit: cover;
-  float: right;
-  margin: clamp(-160px, -12vw, -30px) 40px 20px 0;
 }
 
 .astro-photo-center {
